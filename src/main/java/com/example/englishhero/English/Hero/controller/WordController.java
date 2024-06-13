@@ -2,7 +2,6 @@ package com.example.englishhero.English.Hero.controller;
 
 import com.example.englishhero.English.Hero.entities.Word;
 import com.example.englishhero.English.Hero.services.WordServices;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,7 +21,7 @@ public class WordController {
         return wordServices.getAllWord();
     }
 
-    @PostMapping
+    @PostMapping("/post")
     Word postWord(@RequestBody Word word){
         return wordServices.postWord(word);
     }

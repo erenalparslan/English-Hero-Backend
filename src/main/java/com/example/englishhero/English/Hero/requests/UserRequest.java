@@ -10,12 +10,12 @@ import lombok.Data;
 public class UserRequest {
     @Id
     @GeneratedValue
-    Long id;
+    int id;
 
     String name;
     String surname;
 
-    public UserRequest(Long id, String name, String surname) {
+    public UserRequest(int id, String name, String surname) {
         this.id = id;
         this.name = name;
         this.surname = surname;

@@ -20,7 +20,7 @@ public class UserService {
 
     public List<UserRequest> getAllUsers() {
         List<User> userList = userRepository.findAll();
-        return userList.stream().map(user -> new UserRequest(user.getId(), user.getName(), user.getSurname())).collect(Collectors.toList());
+        return userList.stream().map(user -> new UserRequest(user.getId(), user.getName(), user.getUsername())).collect(Collectors.toList());
     }
 
     public User getUsersById(Long id) {
@@ -30,6 +30,6 @@ public class UserService {
 
     public UserRequest postUsers(User user) {
         userRepository.save(user);
-        return new UserRequest(user.getId(), user.getName(), user.getSurname());
+        return new UserRequest(user.getId(), user.getName(), user.getUsername());
     }
 }

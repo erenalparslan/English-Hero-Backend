@@ -27,7 +27,7 @@ public class WordServices {
 
     public Word postWord(Word word) {
         User user = userRepository.findById(word.getUser_id()).orElse(null);
-        if (user == null) {
+        if (user == null || word.getEnglishWord().isEmpty()||word.getTurkishWord().isEmpty()||word.getEnglishWord().isBlank()||word.getTurkishWord().isBlank()) {
             return null;
         } else {
             wordRepository.save(word);

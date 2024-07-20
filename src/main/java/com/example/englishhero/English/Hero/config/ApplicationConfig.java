@@ -1,7 +1,7 @@
 package com.example.englishhero.English.Hero.config;
 
 
-import com.example.englishhero.English.Hero.repository.UserRepository;
+import com.example.englishhero.English.Hero.dataAcces.abstracts.UserDao;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +19,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @RequiredArgsConstructor
 public class ApplicationConfig {
 
-  private final UserRepository repository;
+  private final UserDao repository;
 
   @Bean
   public UserDetailsService userDetailsService() {

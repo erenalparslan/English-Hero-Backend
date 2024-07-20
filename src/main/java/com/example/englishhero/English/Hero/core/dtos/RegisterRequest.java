@@ -1,7 +1,7 @@
 package com.example.englishhero.English.Hero.core.dtos;
 
 
-import com.example.englishhero.English.Hero.entities.Role;
+import com.example.englishhero.English.Hero.core.entities.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

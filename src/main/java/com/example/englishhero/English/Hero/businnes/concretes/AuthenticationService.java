@@ -7,10 +7,10 @@ import com.example.englishhero.English.Hero.core.dtos.RegisterRequest;
 import com.example.englishhero.English.Hero.core.utilities.security.token.Token;
 import com.example.englishhero.English.Hero.core.utilities.security.token.TokenRepository;
 import com.example.englishhero.English.Hero.core.utilities.security.token.TokenType;
-import com.example.englishhero.English.Hero.entities.Role;
-import com.example.englishhero.English.Hero.entities.User;
+import com.example.englishhero.English.Hero.core.entities.Role;
+import com.example.englishhero.English.Hero.core.entities.User;
 import com.example.englishhero.English.Hero.entities.dtos.CheckTokenDTO;
-import com.example.englishhero.English.Hero.repository.UserRepository;
+import com.example.englishhero.English.Hero.dataAcces.abstracts.UserDao;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -28,7 +28,7 @@ import java.io.IOException;
 @Service
 @RequiredArgsConstructor
 public class AuthenticationService {
-  private final UserRepository repository;
+  private final UserDao repository;
   private final TokenRepository tokenRepository;
   private final PasswordEncoder passwordEncoder;
   private final JwtService jwtService;

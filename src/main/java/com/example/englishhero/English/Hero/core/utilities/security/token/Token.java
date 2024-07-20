@@ -1,7 +1,7 @@
 package com.example.englishhero.English.Hero.core.utilities.security.token;
 
 
-import com.example.englishhero.English.Hero.entities.User;
+import com.example.englishhero.English.Hero.core.entities.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

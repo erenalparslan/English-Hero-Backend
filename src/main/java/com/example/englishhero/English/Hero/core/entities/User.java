@@ -1,4 +1,4 @@
-package com.example.englishhero.English.Hero.entities;
+package com.example.englishhero.English.Hero.core.entities;
 
 import com.example.englishhero.English.Hero.core.utilities.security.token.Token;
 import io.micrometer.common.lang.Nullable;

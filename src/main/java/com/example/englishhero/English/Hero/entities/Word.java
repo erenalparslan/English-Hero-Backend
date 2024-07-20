@@ -1,7 +1,5 @@
 package com.example.englishhero.English.Hero.entities;
 
-import com.example.englishhero.English.Hero.requests.UserRequest;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -12,9 +10,9 @@ public class Word {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
-    private Long user_id;
+    private Integer user_id;
     private String turkishWord;
     private String englishWord;
 

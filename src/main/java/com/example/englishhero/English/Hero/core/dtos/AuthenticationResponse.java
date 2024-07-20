@@ -1,6 +1,6 @@
 package com.example.englishhero.English.Hero.core.dtos;
 
-import com.example.englishhero.English.Hero.entities.Role;
+import com.example.englishhero.English.Hero.core.entities.Role;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.AllArgsConstructor;

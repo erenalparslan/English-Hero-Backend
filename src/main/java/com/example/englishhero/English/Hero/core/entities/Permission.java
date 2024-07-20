@@ -1,4 +1,4 @@
-package com.example.englishhero.English.Hero.entities;
+package com.example.englishhero.English.Hero.core.entities;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
